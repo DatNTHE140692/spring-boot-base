@@ -1,0 +1,20 @@
+app:
+  secret: "OnlyForTesting"
+server:
+  port: 9090
+spring:
+  datasource:
+    username: test
+    password: 123123
+    url: "jdbc:mysql://127.0.0.1:3306/test?autoReconnect=true&failOverReadOnly=false&maxReconnects=10"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      username: test
+      password: 123123
+      minimum-idle: 5
+      idle-timeout: 30000
+      max-lifetime: 2000000
+      maximum-pool-size: 500
+      connection-timeout: 30000
+      pool-name: LibraryHikariPool
+      jdbc-url: "jdbc:mysql://127.0.0.1:3306/test?autoReconnect=true&failOverReadOnly=false&maxReconnects=10"
